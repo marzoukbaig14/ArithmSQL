@@ -14,10 +14,10 @@ namespace VeryLongIntCalculator
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
+        //private void Form1_Load(object sender, EventArgs e)
+        //{
 
-        }
+        //}
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -78,7 +78,7 @@ namespace VeryLongIntCalculator
             SaveToDatabase(num1, num2, operation, resultNumber.ToString());
         }
 
-        // Load a calculation from the database if exists
+        // Load a calculation from the database 
         private string LoadFromDatabase(string num1, string num2, string operation)
         {   
             // query selects Result from the Calculations table where rows have numbers and operator equal to our inputs

@@ -23,7 +23,7 @@ namespace VeryLongIntCalculator
         }
 
         private VeryLongInt(List<int> digits)
-        { // secondary constructor to store results
+        { // secondary constructor to store result
             this.digits = digits;
         }
 
@@ -47,7 +47,7 @@ namespace VeryLongIntCalculator
             }
 
             if (carry > 0) result.Add(carry);
-            // converting to VerylongInt and returning 
+            
             return new VeryLongInt(result);
         }
         
