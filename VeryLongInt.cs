@@ -51,8 +51,8 @@ namespace VeryLongIntCalculator
             return new VeryLongInt(result);
         }
         
-        // method that overloads the * oeprator
-        //input parametrs are VeryLongInt objects i.e. reversed also returns a VeryLongInt
+        // method that overloads the * operator
+        // input parametrs are VeryLongInt objects i.e. reversed also returns a VeryLongInt
         public static VeryLongInt operator *(VeryLongInt a, VeryLongInt b)
         {
             // initialzing result as VeryLongInt of value 0 in order to be able to add partial products

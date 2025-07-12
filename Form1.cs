@@ -1,4 +1,5 @@
 
+using System.Drawing.Text;
 using Microsoft.Data.SqlClient;
 
 
@@ -99,7 +100,7 @@ namespace VeryLongIntCalculator
             }
         }
 
-        // Save a calculation to the database
+        // Cache the calulcations
         private void SaveToDatabase(string num1, string num2, string operation, string result)
         {
             string query = "INSERT INTO Calculations (Int1, Int2, Operator, Result) VALUES (@Int1, @Int2, @Operator, @Result)";
@@ -110,6 +111,8 @@ namespace VeryLongIntCalculator
                 command.Parameters.AddWithValue("@Int1", num1);
                 command.Parameters.AddWithValue("@Int2", num2);
                 command.Parameters.AddWithValue("@Operator", operation);
+
+        
 
 
 
